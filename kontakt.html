@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Kontakt i wycena | RMS Kosztorysy Warszawa</title>
+<meta name="description" content="Zapytanie ofertowe do RMS Kosztorysy: prześlij projekt (pdf, dwg, rvt, xls, docx), a odpowiemy z terminem i ceną. Tel. +48 609 974 299.">
+<link rel="icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="v2.css">
+<!-- Wizualizacja poglądowa (wersja 2, wg wzorów przesłanych przez klienta). Zdjęcia i teksty oferty z rms-kosztorysy.pl.
+     PRZYKŁADOWE: podpisy realizacji, odpowiedzi w FAQ, krótkie opisy rodzajów kosztorysów, lista "Dla kogo", 5 kroków współpracy; formularz bez wysyłki. -->
+</head>
+<body>
+<div class="pasek-info">
+  <div class="wrap pasek-info-in">
+    <a href="tel:+48609974299"><svg class="ico-s" aria-hidden="true"><use href="icons.svg#i-tel"/></svg>+48 609 974 299</a>
+    <a href="mailto:biuro@rms-kosztorysy.pl"><svg class="ico-s" aria-hidden="true"><use href="icons.svg#i-mail"/></svg>biuro@rms-kosztorysy.pl</a>
+    <span class="pasek-info-p">Kosztorysy inwestorskie, ofertowe, powykonawcze i szacunkowe</span>
+  </div>
+</div>
+<header class="top" id="top">
+  <div class="wrap top-in">
+    <a href="index.html" class="logo" aria-label="RMS Kosztorysy - strona główna"><img src="img/logo-rms.png" alt="RMS kosztorysy" width="489" height="100"></a>
+    <nav class="menu" id="menu" aria-label="Menu główne">
+      <a href="index.html">Strona główna</a>
+      <a href="oferta.html">Oferta</a>
+      <a href="index.html#realizacje">Realizacje</a>
+      <a href="index.html#dlaczego">O nas</a>
+      <a href="index.html#wiedza">Wiedza</a>
+      <a href="kontakt.html" class="akt" aria-current="page">Kontakt</a>
+    </nav>
+    <a class="btn btn-zloty top-cta" href="kontakt.html">Wycena <svg class="strz" aria-hidden="true"><use href="icons.svg#i-strzalka"/></svg></a>
+    <a class="tel-ikona" href="tel:+48609974299" aria-label="Zadzwoń: +48 609 974 299"><svg class="ico-s" aria-hidden="true"><use href="icons.svg#i-tel"/></svg></a>
+    <button class="burger" id="burger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<main>
+<section class="pod-hero pod-hero-niski">
+  <img src="img/r-blok-wieczor.webp" alt="" width="1600" height="1085">
+  <div class="wrap pod-hero-in">
+    <p class="okruszki"><a href="index.html">Strona główna</a> / Kontakt</p>
+    <h1>Kontakt i wycena</h1>
+    <p class="lead">Prześlij projekt lub opis zakresu. Odpowiemy z terminem i ceną opracowania.</p>
+  </div>
+</section>
+<section class="sekcja kontakt-sek">
+  <div class="wrap kontakt-in">
+    <form class="wycena wycena-duza" id="form-kontakt" novalidate>
+      <h2 class="wycena-tyt">Zapytanie ofertowe</h2>
+      <p class="wycena-pod">Prześlij dokumentację, a odpowiemy z terminem i ceną opracowania.</p>
+      <div class="pola">
+        <label><span>Imię i nazwisko lub firma</span><input name="kto" autocomplete="name" required></label>
+        <label><span>E-mail</span><input name="email" type="email" autocomplete="email"></label>
+        <label><span>Telefon</span><input name="tel" type="tel" autocomplete="tel"></label>
+        <label><span>Rodzaj opracowania</span><select name="rodzaj"><option>Kosztorys inwestorski</option><option>Kosztorys ofertowy</option><option>Przedmiar robót</option><option>STWiORB</option><option>Kontrola kosztów inwestycji</option><option>Analiza ofert wykonawców</option><option>Kosztorys powykonawczy / różnicowy / zamienny</option><option>Inne</option></select></label>
+        <label class="pole-szer"><span>Czego potrzebujesz?</span><textarea name="opis" rows="5" placeholder="Rodzaj kosztorysu, obiekt, termin"></textarea></label>
+      </div>
+      <label class="pliki">
+        <input type="file" name="pliki" multiple accept=".pdf,.dwg,.rvt,.xls,.xlsx,.doc,.docx,.zip">
+        <svg class="ico-plik" aria-hidden="true"><use href="icons.svg#i-chmura"/></svg>
+        <span><strong>Dodaj pliki</strong> lub przeciągnij je tutaj<br><small>pdf, dwg, rvt, xls, docx (do 20 MB)</small></span>
+      </label>
+      <ul class="lista-plikow" aria-live="polite"></ul>
+      <button class="btn btn-zloty" type="submit">Wyślij zapytanie <svg class="strz" aria-hidden="true"><use href="icons.svg#i-strzalka"/></svg></button>
+      <p class="form-info" role="status"></p>
+    </form>
+    <div class="kontakt-dane">
+      <h2>Dane kontaktowe</h2>
+      <ul class="dane">
+        <li><svg class="ico-s" aria-hidden="true"><use href="icons.svg#i-tel"/></svg><a href="tel:+48609974299">+48 609 974 299</a></li>
+        <li><svg class="ico-s" aria-hidden="true"><use href="icons.svg#i-mail"/></svg><a href="mailto:biuro@rms-kosztorysy.pl">biuro@rms-kosztorysy.pl</a></li>
+        <li><svg class="ico-s" aria-hidden="true"><use href="icons.svg#i-pin"/></svg><span>RMS Kosztorysy sp. z o.o.<br>ul. Jagiellońska 88 lok. 124A, 03-215 Warszawa</span></li>
+      </ul>
+      <p class="kontakt-osoba">Jacek Matuszyński<br><span>kosztorysowanie i doradztwo techniczne</span></p>
+      <div class="mapa"><iframe title="Mapa: ul. Jagiellońska 88, Warszawa" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=20.9963%2C52.2852%2C21.0143%2C52.2932&amp;layer=mapnik&amp;marker=52.28927%2C21.00534"></iframe></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<section class="cta-zloty">
+  <div class="wrap cta-zloty-in">
+    <p class="cta-zloty-txt">Prześlij dokumentację i otrzymaj wycenę opracowania<small>Odpowiadamy z terminem i ceną, zanim zaczniemy pracę.</small></p>
+    <a class="btn btn-granat" href="kontakt.html">Zapytanie ofertowe <svg class="strz" aria-hidden="true"><use href="icons.svg#i-strzalka"/></svg></a>
+  </div>
+</section>
+<footer class="stopka">
+  <div class="wrap stopka-kol">
+    <div class="stopka-firma">
+      <img src="img/logo-rms-biale.png" alt="RMS kosztorysy" width="318" height="65">
+      <p>Kosztorysowanie i doradztwo techniczne.<br>Jacek Matuszyński</p>
+    </div>
+    <div>
+      <h3>Oferta</h3>
+      <a href="oferta.html#inwestorskie">Kosztorysy inwestorskie</a>
+      <a href="oferta.html#ofertowe">Kosztorysy ofertowe</a>
+      <a href="oferta.html#przedmiary">Przedmiary robót</a>
+      <a href="oferta.html#stwiorb">STWiORB</a>
+      <a href="oferta.html#rodzaje">Rodzaje kosztorysów</a>
+    </div>
+    <div>
+      <h3>Firma</h3>
+      <a href="index.html#dlaczego">O nas</a>
+      <a href="index.html#realizacje">Realizacje</a>
+      <a href="index.html#faq">Pytania i odpowiedzi</a>
+      <a href="index.html#wiedza">Wiedza</a>
+    </div>
+    <div class="stopka-kontakt">
+      <h3>Kontakt</h3>
+      <p>RMS Kosztorysy sp. z o.o.<br>ul. Jagiellońska 88 lok. 124A, 03-215 Warszawa</p>
+      <a href="tel:+48609974299">+48 609 974 299</a>
+      <a href="mailto:biuro@rms-kosztorysy.pl">biuro@rms-kosztorysy.pl</a>
+    </div>
+  </div>
+  <div class="wrap stopka-dol">© <span class="rok">2026</span> RMS Kosztorysy sp. z o.o. Wizualizacja poglądowa nowej strony.</div>
+</footer>
+<div class="mob" id="mob">
+  <a href="tel:+48609974299" class="mob-tel">Zadzwoń</a>
+  <a href="kontakt.html" class="mob-cta">Zapytanie ofertowe</a>
+</div>
+<script src="v2.js"></script>
+</body>
+</html>
